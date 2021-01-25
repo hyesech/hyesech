@@ -1,15 +1,24 @@
 import React from "react";
+import styled from "styled-components";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+
+const Container = styled.div``;
+const TitleWrapper = styled.div``;
+const ArticleWrapper = styled.div``;
 
 const PostTemplate = ({ content, data }) => {
   // This holds the data between `---` from .md file.
   const frontmatter = data;
   return (
-    <>
-      <h1>{frontmatter.title}</h1>
-      <ReactMarkdown source={content} />
-    </>
+    <Container>
+      <TitleWrapper>
+        <h1>{frontmatter.title}</h1>
+      </TitleWrapper>
+      <ArticleWrapper>
+        <ReactMarkdown source={content} />
+      </ArticleWrapper>
+    </Container>
   );
 };
 
