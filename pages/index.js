@@ -10,10 +10,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          <a href="https://hyesech.dev">hyesech</a>
-        </h1>
-
         <p className={styles.description}>
           <code className={styles.code}>
             Everything begins with your stance.
@@ -53,7 +49,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p className={styles.description}>
-          <code className={styles.code}>Remember.</code>
+          <code className={styles.code}>hyesech</code>
         </p>
       </footer>
     </div>
