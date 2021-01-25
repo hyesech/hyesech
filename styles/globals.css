@@ -32,12 +32,11 @@ body {
 
 ol, ul {
   list-style: none;
-  margin-bottom: 1rem;
 }
 
 li{
   list-style: none;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 
 blockquote, q {
