@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -60,6 +61,11 @@ const Nav = () => {
     <Container isActive={isActive}>
       <NavBtn onClick={handleToggle}>{isActive ? "⏄" : "⏂"}</NavBtn>
       <NavPage>
+        <NavItems>
+          <NavTitle>
+            <a href="/posts/markdown-test">Markdown Test</a>
+          </NavTitle>
+        </NavItems>
         <NavItems>
           <NavTitle>리스트 제목</NavTitle>
           <NavItem>리스트게시34343434343물1</NavItem>
