@@ -9,7 +9,7 @@ const Container = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
   z-index: 99;
-  right: ${(props) => (props.isActive ? "-300px" : "0px")};
+  right: ${(props) => (props.isActive ? "0" : "-300px")};
   transition: all 0.5s ease-in-out;
 `;
 
@@ -58,7 +58,7 @@ const Nav = () => {
 
   return (
     <Container isActive={isActive}>
-      <NavBtn onClick={handleToggle}>{isActive ? "⏂" : "⏄"}</NavBtn>
+      <NavBtn onClick={handleToggle}>{isActive ? "⏄" : "⏂"}</NavBtn>
       <NavPage>
         <NavItems>
           <NavTitle>리스트 제목</NavTitle>
