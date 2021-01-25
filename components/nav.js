@@ -28,17 +28,17 @@ const NavPage = styled.nav`
   background-color: rgba(0, 0, 0, 0.01);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 `;
 
 const NavItems = styled.ul`
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 `;
 const NavTitle = styled.span`
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #0000ff;
 `;
 const NavItem = styled.li`
