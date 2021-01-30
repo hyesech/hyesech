@@ -1,12 +1,44 @@
 import React from "react";
-import PostsLayout from "../../components/PostsLayout";
 import styled from "styled-components";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
-const Container = styled.div``;
-const TitleWrapper = styled.div``;
-const ArticleWrapper = styled.div``;
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+const ArticleWrapper = styled.article`
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin: 2rem 0;
+  padding: 0 2rem;
+`;
+const HeaderWrapper = styled.div`
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+const TitleWrapper = styled.div`
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
+const DateWrapper = styled.span`
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const PostTemplate = ({ content, data }) => {
   // This holds the data between `---` from .md file.
@@ -14,14 +46,17 @@ const PostTemplate = ({ content, data }) => {
   const markdownBody = content;
 
   return (
-    <PostsLayout>
-      <TitleWrapper>
-        <h1>{frontmatter.title}</h1>
-      </TitleWrapper>
+    <Container>
       <ArticleWrapper>
-        <ReactMarkdown source={markdownBody} />
+        <HeaderWrapper>
+          <TitleWrapper>{frontmatter.title}</TitleWrapper>
+          <DateWrapper>{frontmatter.date}</DateWrapper>
+        </HeaderWrapper>
+        <ArticleWrapper>
+          <ReactMarkdown source={markdownBody} />
+        </ArticleWrapper>
       </ArticleWrapper>
-    </PostsLayout>
+    </Container>
   );
 };
 

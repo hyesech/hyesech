@@ -1,8 +1,7 @@
 ---
-slug: blog-two
 title: My Second Blog
-description: This Description Of My Second Blog.
-date: 25-September-2020
+subtitle: This Description Of My Second Blog.
+date: 2021-01-30
 ---
 
 # h1

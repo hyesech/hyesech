@@ -9,13 +9,14 @@ const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  z-index: 99;
+  z-index: 999;
   right: ${(props) => (props.isActive ? "0" : "-300px")};
   transition: all 0.5s ease-in-out;
 `;
 
-const NavBtn = styled.span`
-  padding: 0.5rem;
+const NavBtn = styled.button`
+  all: unset;
+  margin: 0.5rem;
   :hover {
     color: #0000ff;
     cursor: pointer;

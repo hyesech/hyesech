@@ -2,7 +2,6 @@
 title: "Markdown Test"
 date: "2020-10-01"
 ---
-하루에 하나씩 만들면 될 것 같아요^^
 # Markdown: Syntax
 
 - [Markdown: Syntax](#markdown-syntax)
@@ -28,7 +27,8 @@ can [see the source for it by adding '.text' to the URL](/projects/markdown/synt
 ## Overview
 
 ### Philosophy
-
+와 진짜 배고프다 이건 한글버전 더미텍스트입니다 에스파 많관부 많관부 와 진짜 배고프다 이건 한글버전 더미텍스트입니다 에스파 많관부 많관부 와 진짜 배고프다 이건 한글버전 더미텍스트입니다 에스파 많관부 많관부와 진짜 배고프다 이건 한글버전 더미텍스트입니다 에스파 많관부 많관부
+와 진짜 배고프다 이건 한글버전 더미텍스트입니다 에스파 많관부 많관부
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
 
 Readability, however, is emphasized above all else. A Markdown-formatted

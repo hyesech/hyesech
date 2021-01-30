@@ -26,9 +26,7 @@ footer, header, hgroup, menu, nav, section {
 html, body {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -ms-overflow-style: none;
-  font-size: 14px;
-  width: 100vw;
-  height: 100vh;
+  
 }
 ::-webkit-scrollbar { display: none; }
 
@@ -62,26 +60,6 @@ a {
   box-sizing: border-box;
 }
 
-h1{
-  font-size: 2rem;
-}
-h2{
-  font-size: 1.8rem;
-}
-h3{
-  font-size: 1.6rem;
-}
-h4{
-  font-size: 1.4rem;
-}
-h5{
-  font-size: 1.2rem;
-}
-h6{
-  font-size: 1rem;
-}
-
-
 
 
 
@@ -108,10 +86,11 @@ Description: Github README style. Includes theme for Pygmentized code blocks.
   -webkit-border-radius: 3px; }
 
 p {
-  margin: 1em 0; }
+  margin: 1em 0; 
+line-height: 1.8rem;}
 
 a {
-  color: #4183c4;
+  color: #0000ff;
   text-decoration: none; }
 
 #wrapper {
@@ -137,25 +116,25 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   border-bottom: 1px solid #ddd; }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   border-bottom: 1px solid #eee; }
 
 h3 {
-  font-size: 1.5em; }
-
-h4 {
   font-size: 1.2em; }
 
-h5 {
+h4 {
   font-size: 1em; }
 
+h5 {
+  font-size: 0.8em; }
+
 h6 {
-  color: #777;
-  font-size: 1em; }
+  color: rgb(0, 0, 255);
+  font-size: 0.8em; }
 
 p, blockquote, table, pre {
   margin: 15px 0; }
@@ -351,16 +330,21 @@ sub {
     border-width: 1px !important; }
 
   ::selection {
-    background: rgba(157, 193, 200, 0.5); }
+    background: rgb(0, 0, 255); 
+  color: white;
+}
 
   h1::selection {
-    background-color: rgba(45, 156, 208, 0.3); }
+    background: rgb(0, 0, 255); 
+  color: white }
 
   h2::selection {
-    background-color: rgba(90, 182, 224, 0.3); }
+    background: rgb(0, 0, 255); 
+  color: white}
 
   h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection {
-    background-color: rgba(133, 201, 232, 0.3); }
+    background: rgb(0, 0, 255); 
+  color: white }
 
   code::selection {
     background-color: rgba(0, 0, 0, 0.7);
@@ -370,13 +354,16 @@ sub {
     color: #eeeeee !important; }
 
   a::selection {
-    background-color: rgba(255, 230, 102, 0.2); }
+    background: rgb(0, 0, 255); 
+    color: white}
 
   .inverted a::selection {
-    background-color: rgba(255, 230, 102, 0.6); }
+    background: rgb(0, 0, 255); 
+    color: white; }
 
   td::selection, th::selection, caption::selection {
-    background-color: rgba(180, 237, 95, 0.5); }
+    background: rgb(0, 0, 255); 
+    color: white; }
 
   .inverted {
     background: #0b2531;
@@ -389,7 +376,7 @@ sub {
   color: #998;
   font-style: italic; }
 .highlight .err {
-  color: #a61717;
+  color: #ff0000;
   background-color: #e3d2d2; }
 .highlight .k, .highlight .o {
   font-weight: bold; }
