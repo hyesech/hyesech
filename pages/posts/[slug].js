@@ -10,13 +10,15 @@ const ArticleWrapper = styled.div``;
 const PostTemplate = ({ content, data }) => {
   // This holds the data between `---` from .md file.
   const frontmatter = data;
+  const markdownBody = content;
+
   return (
     <Container>
       <TitleWrapper>
         <h1>{frontmatter.title}</h1>
       </TitleWrapper>
       <ArticleWrapper>
-        <ReactMarkdown source={content} />
+        <ReactMarkdown source={markdownBody} />
       </ArticleWrapper>
     </Container>
   );
