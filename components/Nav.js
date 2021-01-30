@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import styled from "styled-components";
+import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
 
 const Container = styled.div`
   position: fixed;
@@ -9,14 +9,14 @@ const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  z-index: 99;
+  z-index: 999;
   right: ${(props) => (props.isActive ? "0" : "-300px")};
   transition: all 0.5s ease-in-out;
 `;
 
-const NavBtn = styled.h4`
-  padding: 0.5rem;
-  font-weight: bold;
+const NavBtn = styled.button`
+  all: unset;
+  margin: 0.5rem;
   :hover {
     color: #0000ff;
     cursor: pointer;
@@ -59,7 +59,13 @@ const Nav = () => {
 
   return (
     <Container isActive={isActive}>
-      <NavBtn onClick={handleToggle}>{isActive ? "⏄" : "⏂"}</NavBtn>
+      <NavBtn onClick={handleToggle}>
+        {isActive ? (
+          <HiOutlineArrowLeft size={30} />
+        ) : (
+          <HiOutlineArrowRight size={30} />
+        )}
+      </NavBtn>
       <NavPage>
         <NavItems>
           <NavTitle>
