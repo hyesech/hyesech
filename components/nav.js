@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import Link from "next/link";
 import styled from "styled-components";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
 
