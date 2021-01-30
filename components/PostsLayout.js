@@ -1,9 +1,15 @@
 // Post Layout
 import React from "react";
 import PropTypes from "prop-types";
+import Nav from "./Nav";
 
 const PostsLayout = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <Nav />
+      {children}
+    </div>
+  );
 };
 
 PostsLayout.propTypes = {
