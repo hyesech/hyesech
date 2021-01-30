@@ -16,7 +16,7 @@ const ArticleWrapper = styled.article`
   max-width: 1000px;
   height: 100%;
   margin: 2rem 0;
-  padding: 0 2rem;
+  padding: 0 1rem;
 `;
 const HeaderWrapper = styled.div`
   height: 30vh;
