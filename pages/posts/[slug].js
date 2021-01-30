@@ -1,4 +1,5 @@
 import React from "react";
+import PostsLayout from "../../components/PostsLayout";
 import styled from "styled-components";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
@@ -13,14 +14,14 @@ const PostTemplate = ({ content, data }) => {
   const markdownBody = content;
 
   return (
-    <Container>
+    <PostsLayout>
       <TitleWrapper>
         <h1>{frontmatter.title}</h1>
       </TitleWrapper>
       <ArticleWrapper>
         <ReactMarkdown source={markdownBody} />
       </ArticleWrapper>
-    </Container>
+    </PostsLayout>
   );
 };
 
