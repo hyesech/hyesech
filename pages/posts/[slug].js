@@ -1,5 +1,5 @@
 import React from "react";
-import PostsLayout from "../../components/postsLayout";
+import PostsLayout from "../../components/PostsLayout";
 import styled from "styled-components";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
