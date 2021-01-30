@@ -14,8 +14,7 @@ const Container = styled.div`
   transition: all 0.5s ease-in-out;
 `;
 
-const NavBtn = styled.button`
-  all: unset;
+const NavBtn = styled.span`
   padding: 0.5rem;
   :hover {
     color: #0000ff;
