@@ -32,9 +32,20 @@ const TitleWrapper = styled.div`
   align-items: center;
   margin-bottom: 1rem;
 `;
+
+const SubTitleWrapper = styled.span`
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+`;
+
 const DateWrapper = styled.span`
   font-size: 0.8rem;
   font-weight: bold;
+  color: #0000ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +61,7 @@ const PostTemplate = ({ content, data }) => {
       <ArticleWrapper>
         <HeaderWrapper>
           <TitleWrapper>{frontmatter.title}</TitleWrapper>
+          <SubTitleWrapper>{frontmatter.subtitle}</SubTitleWrapper>
           <DateWrapper>{frontmatter.date}</DateWrapper>
         </HeaderWrapper>
         <ArticleWrapper>
