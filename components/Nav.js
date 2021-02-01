@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
+import { BsArrowBarLeft, BsArrowBarRight } from "react-icons//bs";
 
 const Container = styled.div`
   position: fixed;
@@ -17,8 +17,8 @@ const Container = styled.div`
 const NavBtn = styled.button`
   all: unset;
   margin: 0.5rem;
+  color: #0000ff;
   :hover {
-    color: #0000ff;
     cursor: pointer;
   }
 `;
@@ -61,9 +61,9 @@ const Nav = () => {
     <Container isActive={isActive}>
       <NavBtn onClick={handleToggle}>
         {isActive ? (
-          <HiOutlineArrowLeft size={30} />
+          <BsArrowBarLeft size={25} />
         ) : (
-          <HiOutlineArrowRight size={30} />
+          <BsArrowBarRight size={25} />
         )}
       </NavBtn>
       <NavPage>
