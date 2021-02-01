@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 
 const Container = styled.div`
   width: 100%;
@@ -32,9 +33,20 @@ const TitleWrapper = styled.div`
   align-items: center;
   margin-bottom: 1rem;
 `;
+
+const SubTitleWrapper = styled.span`
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+`;
+
 const DateWrapper = styled.span`
   font-size: 0.8rem;
   font-weight: bold;
+  color: #0000ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,10 +62,11 @@ const PostTemplate = ({ content, data }) => {
       <ArticleWrapper>
         <HeaderWrapper>
           <TitleWrapper>{frontmatter.title}</TitleWrapper>
+          <SubTitleWrapper>{frontmatter.subtitle}</SubTitleWrapper>
           <DateWrapper>{frontmatter.date}</DateWrapper>
         </HeaderWrapper>
         <ArticleWrapper>
-          <ReactMarkdown source={markdownBody} />
+          <ReactMarkdown plugins={[gfm]} children={markdownBody} />
         </ArticleWrapper>
       </ArticleWrapper>
     </Container>
@@ -71,8 +84,6 @@ PostTemplate.getInitialProps = async (context) => {
 
   // Pass data to our component props
   return { ...data };
-
-  return { slug };
 };
 
 export default PostTemplate;
