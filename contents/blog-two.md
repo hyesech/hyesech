@@ -1,6 +1,6 @@
 ---
 title: My Second Blog
-subtitle: This Description Of My Second Blog.
+subtitle: This Description Of My Second Blog
 date: "2021-01-30"
 ---
 

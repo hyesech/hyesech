@@ -1,6 +1,6 @@
 ---
 title: My Second Blog
-subtitle: This Description Of My Second Blog.
+subtitle: This Description Of My Second Blog
 date: "2021-01-30"
 ---
 
@@ -11,6 +11,13 @@ date: "2021-01-30"
 ### h3
 
 Normal text
+
+> ㅂㄱ파
+
+- [ ] ㅇㄹㄷㄴㅇ
+- [ ] ㄹㄷㄴㅇㄹ
+- [ ] ㄷㄹㄴㅇㄹㄴ
+- [x] ㄴㅇㄹ 
 
 ```javascript
 export default class MyDocument extends Document {

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 
 const Container = styled.div`
   width: 100%;
@@ -65,7 +66,7 @@ const PostTemplate = ({ content, data }) => {
           <DateWrapper>{frontmatter.date}</DateWrapper>
         </HeaderWrapper>
         <ArticleWrapper>
-          <ReactMarkdown source={markdownBody} />
+          <ReactMarkdown plugins={[gfm]} children={markdownBody} />
         </ArticleWrapper>
       </ArticleWrapper>
     </Container>
@@ -83,8 +84,6 @@ PostTemplate.getInitialProps = async (context) => {
 
   // Pass data to our component props
   return { ...data };
-
-  // return { slug };
 };
 
 export default PostTemplate;
