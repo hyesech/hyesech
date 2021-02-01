@@ -72,7 +72,7 @@ PostTemplate.getInitialProps = async (context) => {
   // Pass data to our component props
   return { ...data };
 
-  return { slug };
+  // return { slug };
 };
 
 export default PostTemplate;
