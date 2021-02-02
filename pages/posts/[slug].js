@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 const ArticleWrapper = styled.article`
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   height: 100%;
   margin: 2rem 0;
   padding: 0 1rem;
