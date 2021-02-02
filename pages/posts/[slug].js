@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 const ArticleWrapper = styled.article`
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   height: 100%;
   margin: 2rem 0;
   padding: 0 1rem;
@@ -25,16 +25,17 @@ const HeaderWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-const TitleWrapper = styled.div`
+const TitleWrapper = styled.header`
   font-size: 2.5rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
 `;
 
-const SubTitleWrapper = styled.span`
+const SubTitleWrapper = styled.article`
   font-size: 0.8rem;
   font-weight: bold;
   display: flex;
