@@ -25,7 +25,7 @@ const HeaderWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-const TitleWrapper = styled.div`
+const TitleWrapper = styled.header`
   font-size: 2.5rem;
   font-weight: bold;
   display: flex;
@@ -35,7 +35,7 @@ const TitleWrapper = styled.div`
   text-align: center;
 `;
 
-const SubTitleWrapper = styled.span`
+const SubTitleWrapper = styled.article`
   font-size: 0.8rem;
   font-weight: bold;
   display: flex;

@@ -43,8 +43,13 @@ const NavTitle = styled.span`
   color: #0000ff;
 `;
 const NavItem = styled.li`
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding-left: 1rem;
+  list-style: none;
+`;
+
+const A = styled.a`
+  color: black;
   :hover {
     color: #0000ff;
     cursor: e-resize;
@@ -69,26 +74,30 @@ const Nav = () => {
       <NavPage>
         <NavItems>
           <NavTitle>
-            <a href="/posts/markdown-test">Markdown Test</a>
+            <A href="/">BACK TO HOME</A>
           </NavTitle>
         </NavItems>
         <NavItems>
-          <NavTitle>리스트 제목</NavTitle>
-          <NavItem>리스트게시34343434343물1</NavItem>
+          <NavTitle>Projects</NavTitle>
+          {/* <NavItem>리스트게시34343434343물1</NavItem>
           <NavItem>리스트게시물2</NavItem>
-          <NavItem>리스트게시물3</NavItem>
+          <NavItem>리스트게시물3</NavItem> */}
         </NavItems>
         <NavItems>
-          <NavTitle>리스트 제목</NavTitle>
-          <NavItem>리스트게시34343434343물1</NavItem>
-          <NavItem>리스트게시물2</NavItem>
-          <NavItem>리스트게시물3</NavItem>
+          <NavTitle>Errors</NavTitle>
+          <NavItem>
+            <A href="/posts/mysql-error-access-denied-for-user-root-localhost">
+              MySQL, Access denied for user 'root'@'localhost'
+            </A>
+          </NavItem>
+          {/* <NavItem>리스트게시물2</NavItem>
+          <NavItem>리스트게시물3</NavItem> */}
         </NavItems>
         <NavItems>
-          <NavTitle>리스트 제목</NavTitle>
-          <NavItem>리스트게시34343434343물1</NavItem>
+          <NavTitle>Bugs</NavTitle>
+          {/* <NavItem>리스트게시34343434343물1</NavItem>
           <NavItem>리스트게시물2</NavItem>
-          <NavItem>리스트게시물3</NavItem>
+          <NavItem>리스트게시물3</NavItem> */}
         </NavItems>
       </NavPage>
     </Container>
