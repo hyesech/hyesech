@@ -32,6 +32,7 @@ const TitleWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 1.2rem;
+  text-align: center;
 `;
 
 const SubTitleWrapper = styled.span`
