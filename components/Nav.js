@@ -40,11 +40,22 @@ const NavItems = styled.ul`
 const NavTitle = styled.span`
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: black;
+  :hover {
+    color: #0000ff;
+  }
+`;
+const SubNavTitle = styled.span`
+  font-weight: bold;
   color: #0000ff;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 `;
 const NavItem = styled.li`
+  margin: unset;
+  margin: 0.2rem 0;
   font-size: 0.9rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   list-style: none;
 `;
 
@@ -79,19 +90,20 @@ const Nav = () => {
         </NavItems>
         <NavItems>
           <NavTitle>Projects</NavTitle>
-          {/* <NavItem>리스트게시34343434343물1</NavItem>
-          <NavItem>리스트게시물2</NavItem>
-          <NavItem>리스트게시물3</NavItem> */}
+          <SubNavTitle>Asker</SubNavTitle>
+          <NavItem>
+            <A href="/posts/asker-redux">Redux 적용기</A>
+          </NavItem>
         </NavItems>
         <NavItems>
           <NavTitle>Errors</NavTitle>
+          <SubNavTitle>MySQL</SubNavTitle>
+
           <NavItem>
             <A href="/posts/mysql-error-access-denied-for-user-root-localhost">
               MySQL, Access denied for user 'root'@'localhost'
             </A>
           </NavItem>
-          {/* <NavItem>리스트게시물2</NavItem>
-          <NavItem>리스트게시물3</NavItem> */}
         </NavItems>
         <NavItems>
           <NavTitle>Bugs</NavTitle>
