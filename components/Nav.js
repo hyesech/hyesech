@@ -94,6 +94,9 @@ const Nav = () => {
           <NavItem>
             <A href="/posts/asker-redux">Redux 적용기</A>
           </NavItem>
+          <NavItem>
+            <A href="/posts/asker-redux-saga">Redux Saga 적용기</A>
+          </NavItem>
         </NavItems>
         <NavItems>
           <NavTitle>Errors</NavTitle>
